@@ -1,4 +1,14 @@
 /* importing google font */
-<style>
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inconsolata:wght@200..900&display=swap');
-</style>
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+.dm-serif-display-regular 
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: bold;
+}
