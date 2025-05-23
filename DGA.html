@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DGA1020 | Sprite Sheet Animation</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DGA1020 – Sprite Sheet Animation</title>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400&display=swap" 
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <nav>
-    <div class="nav-buttons">
-      <button onclick="scrollToSection('intro')">Intro</button>
-      <button onclick="scrollToSection('about')">About Me</button>
-      <button onclick="scrollToSection('sprite')">Sprite Sheet</button>
-    </div>
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#sprite">Sprite Sheet</a></li>
+    </ul>
   </nav>
 
-  <header>
+  <header class="hero">
     <h1>Sprite Sheet Animation</h1>
-    <h2>by Fran</h2>
+    <p class="subtitle">by Fran | DGA1020 Assignment</p>
   </header>
 
   <main>
-    <section id="intro">
-      <h3>Intro</h3>
+    <section id="intro" class="section">
+      <h2>Intro</h2>
       <p>
-        Welcome! This page showcases my favourite topic from DGA1020 – Sprite Sheet Animation. I created this using Procreate for drawing each frame and Unity to bring it all together.
+        Welcome! This project highlights my favourite topic from DGA1019 &amp; DGA1020: crafting sprite sheet animations. 
+        I’ve drawn each frame in Procreate, then sequenced them in Unity to bring my pigeon character to life.
       </p>
     </section>
 
-    <section id="about">
-      <h3>About Me</h3>
+    <section id="about" class="section">
+      <h2>About Me</h2>
       <p>
-        I’m Fran
+        I’m Fran, a digital artist passionate about merging illustration and interactivity. 
+        From sketch to screen, I love telling stories through motion.
+      </p>
     </section>
 
-    <section id="sprite">
-      <h3>Sprite Sheet Project</h3>
-      <img src="images/pigeon-animation.png" alt="Pigeon Sprite Sheet" />
-      <p>This is a still from my pigeon character sprite sheet animation.</p>
+    <section id="sprite" class="section">
+      <h2>Sprite Sheet Project</h2>
+      <img src="images/pigeon-animation.png" alt="Pigeon Sprite Sheet">
+      <p>This still shows my pigeon character’s walk cycle frames arranged in a grid.</p>
 
       <video controls>
-        <source src="pigeon-animation.mp4" type="video/mp4" />
+        <source src="pigeon-animation.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
 
-      <p>
-        Follow me on
+      <p class="follow">
+        Follow my art on 
         <a href="https://www.instagram.com/franhh.art" target="_blank">Instagram</a>
-        for more of my work.
       </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Fran | DGA1020 Assignment</p>
+    <p>&copy; 2025 Fran</p>
   </footer>
 
-  <script>
-    function scrollToSection(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
 </body>
 </html>
