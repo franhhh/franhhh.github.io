@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DGA1020 | Sprite Sheet</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    h1 {
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>DGA1020 | Sprite Sheet Animation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <a href="#" class="nav logo"></a>
-        <h2 class="logo-text">Sprite Sheet Animation</h2>
-    </a>
-    <ul class="nav menu">
-    <li class="nav-item">
-        <a href="" class="nav link">Home</a>
-        </li>
-         <li class="nav-item">
-        <a href="" class="nav link">About</a>
-        </li>
-         <li class="nav-item">
-        <a href="" class="nav link">Sprite Animation</a>
-        </li>
+    <nav>
+        <button onclick="document.getElementById('intro').scrollIntoView({ behavior: 'smooth' })">Intro</button>
+        <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">About Me</button>
+        <button onclick="document.getElementById('sprite').scrollIntoView({ behavior: 'smooth' })">Sprite Sheet</button>
     </nav>
 
-    <h2>Pigeon Character</h2>
-    <p>
-        Hey, my name is Fran and this page is to showcase my sprite sheet animation which was done on procreate and unity. 
-        Using procreate to create each individual animation, and unity was used to combine each animation and make the final mp4.
-    </p>
+    <header>
+        <h1>Sprite Sheet Animation</h1>
+        <h2>Pigeon</h2>
+    </header>
 
-    <p> 
-        Keep supporting my art on 
-        <a href="https://www.instagram.com/franhh.art" target="_blank">Instagram</a>.
-    </p>
+    <main>
+        <section id="intro">
+            <h3>Intro</h3>
+            <p>
+                Welcome! This page showcases my favourite topic DGA1020 – Sprite Sheet Animation.
+                I created this animation using Procreate to draw each frame, and Unity to compile them into an animated sequence.
+            </p>
+        </section>
+
+        <section id="about">
+            <h3>About Me</h3>
+            <p>
+                Hi, I’m Fran
+            </p>
+        </section>
+
+        <section id="sprite">
+            <h3>Sprite Sheet Project</h3>
+            <img src="images/pigeon-animation.png" alt="Pigeon Sprite Sheet">
+            <p>This image is a still from my pigeon character sprite sheet.</p>
+            
+            <video controls>
+                <source src="pigeon-animation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <p>
+                Follow me on 
+                <a href="https://www.instagram.com/franhh.art" target="_blank">Instagram</a> 
+                to see more of my work.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fran | DGA1020 Assignment</p>
+    </footer>
 </body>
 </html>
- 
