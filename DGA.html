@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DGA1020 | Sprite Sheet Animation</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DGA1020 | Sprite Sheet Animation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-        <button onclick="document.getElementById('intro').scrollIntoView({ behavior: 'smooth' })">Intro</button>
-        <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">About Me</button>
-        <button onclick="document.getElementById('sprite').scrollIntoView({ behavior: 'smooth' })">Sprite Sheet</button>
-    </nav>
+  <nav>
+    <div class="nav-buttons">
+      <button onclick="scrollToSection('intro')">Intro</button>
+      <button onclick="scrollToSection('about')">About Me</button>
+      <button onclick="scrollToSection('sprite')">Sprite Sheet</button>
+    </div>
+  </nav>
 
-    <header>
-        <h1>Sprite Sheet Animation</h1>
-        <h2>Pigeon</h2>
-    </header>
+  <header>
+    <h1>Sprite Sheet Animation</h1>
+    <h2>by Fran</h2>
+  </header>
 
-    <main>
-        <section id="intro">
-            <h3>Intro</h3>
-            <p>
-                Welcome! This page showcases my favourite topic DGA1020 – Sprite Sheet Animation.
-                I created this animation using Procreate to draw each frame, and Unity to compile them into an animated sequence.
-            </p>
-        </section>
+  <main>
+    <section id="intro">
+      <h3>Intro</h3>
+      <p>
+        Welcome! This page showcases my favourite topic from DGA1020 – Sprite Sheet Animation. I created this using Procreate for drawing each frame and Unity to bring it all together.
+      </p>
+    </section>
 
-        <section id="about">
-            <h3>About Me</h3>
-            <p>
-                Hi, I’m Fran
-            </p>
-        </section>
+    <section id="about">
+      <h3>About Me</h3>
+      <p>
+        I’m Fran
+    </section>
 
-        <section id="sprite">
-            <h3>Sprite Sheet Project</h3>
-            <img src="images/pigeon-animation.png" alt="Pigeon Sprite Sheet">
-            <p>This image is a still from my pigeon character sprite sheet.</p>
-            
-            <video controls>
-                <source src="pigeon-animation.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+    <section id="sprite">
+      <h3>Sprite Sheet Project</h3>
+      <img src="images/pigeon-animation.png" alt="Pigeon Sprite Sheet" />
+      <p>This is a still from my pigeon character sprite sheet animation.</p>
 
-            <p>
-                Follow me on 
-                <a href="https://www.instagram.com/franhh.art" target="_blank">Instagram</a> 
-                to see more of my work.
-            </p>
-        </section>
-    </main>
+      <video controls>
+        <source src="pigeon-animation.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-    <footer>
-        <p>&copy; 2025 Fran | DGA1020 Assignment</p>
-    </footer>
+      <p>
+        Follow me on
+        <a href="https://www.instagram.com/franhh.art" target="_blank">Instagram</a>
+        for more of my work.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fran | DGA1020 Assignment</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
