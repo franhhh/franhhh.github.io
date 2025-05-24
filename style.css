@@ -223,3 +223,38 @@ display: inline-block;
     }
 }
 
+.spritesheet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding: 6rem 9%;
+    background-color: #f9f7f3;
+    min-height: 100vh;
+    scroll-margin-top: 100px;
+}
+
+.spritesheet-content {
+    max-width: 600px;
+}
+
+.spritesheet h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #4a403a;
+    margin-bottom: 2rem;
+}
+
+.spritesheet p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #3a3a3a;
+}
+
+.spritesheet-img img {
+    width: 30vw;
+    max-width: 400px;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
