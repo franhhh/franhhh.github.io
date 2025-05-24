@@ -217,8 +217,10 @@ span {
 
 #about p {
     font-size: 1.8rem;
-    line-height: 1.6;
+    line-height: 1.8;
+    max-width: 800px;
     color: #3a3a3a;
+    margin-bottom: 2rem;
 }
 
 /* SPRITE SHEET Section */
