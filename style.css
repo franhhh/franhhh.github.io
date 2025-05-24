@@ -290,3 +290,21 @@ span {
         margin-bottom: 2rem;
     }
 }
+.final-video {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.final-video h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    color: #4a403a;
+    font-family: 'Playfair Display', serif;
+}
+
+.final-video video {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
