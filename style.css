@@ -290,3 +290,10 @@ span {
         margin-bottom: 2rem;
     }
 }
+.sprite-sequence img {
+    width: 150px; /* or try 20% if you want it to be responsive */
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
